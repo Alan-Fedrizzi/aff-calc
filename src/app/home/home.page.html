@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar class="toolbar">
+    <ion-title> Calculator </ion-title>
+    <ion-buttons slot="primary">
+      <ion-button (click)="onSwitchMode()">
+        <ion-icon
+          name="{{ isDarkMode ? 'sunny' : 'moon' }}-outline"
+          slot="icon-only"
+        ></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <main class="container">
+    <calc-component></calc-component>
+  </main>
+</ion-content>

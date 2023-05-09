@@ -1,0 +1,13 @@
+.toolbar {
+  --background: var(--background-light-general);
+  --color: var(--background-dark-general);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-light-1);
+}
